@@ -2,6 +2,16 @@
 
 Access Malaysia's [OpenDOSM](https://open.dosm.gov.my/) data from ClickHouse.
 
+## How it works
+
+OpenDOSM provides public GCS buckets where you can download the dataset as CSV or Parquet files.
+This project uses [dbt](https://docs.getdbt.com/) to pull these files into [ClickHouse](https://clickhouse.com/).
+
+## Why?
+
+Mostly for fun. I work as a data engineer, and this is the kind of things I do at work.
+Besides that, the data can be used for various purposes, e.g. as training set for quantitative economics models.
+
 ## Usage
 
 You need to have Docker installed.
