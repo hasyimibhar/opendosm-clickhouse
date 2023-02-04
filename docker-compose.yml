@@ -1,0 +1,17 @@
+services:
+  clickhouse-server:
+    build: clickhouse-server
+    ports:
+      - "8123:8123"
+    healthcheck:
+      test: ["CMD", "curl", "http://localhost:8123"]
+
+  dbt:
+    build: dosm_clickhouse
+    entrypoint: dbt
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dosm_clickhouse:/usr/app
+    depends_on:
+      - clickhouse-server
