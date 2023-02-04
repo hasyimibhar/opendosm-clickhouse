@@ -11,8 +11,8 @@ services:
     entrypoint: dbt
     ports:
       - "8080:8080"
-    volumes:
-      - ./dbt:/usr/app
+        # volumes:
+        #   - ./dbt:/usr/app
     depends_on:
       - clickhouse-server
 
