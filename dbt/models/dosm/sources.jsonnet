@@ -30,8 +30,14 @@ local dosm_public_economy = [{ name: t, bucket: 'dosm-public-economy' } for t in
   'salaries_strata_sex',
 ]];
 
+local dosm_public_healthcare = [{ name: t, bucket: 'dosm-public-healthcare' } for t in [
+  'covid-cases',
+]];
+
+local dosm = dosm_public_economy + dosm_public_healthcare;
+
 std.manifestYamlDoc(
-  ext_sources.generate('ext_dosm', dosm_public_economy),
+  ext_sources.generate('ext_dosm', dosm),
   indent_array_in_object=true,
   quote_keys=false,
 )
