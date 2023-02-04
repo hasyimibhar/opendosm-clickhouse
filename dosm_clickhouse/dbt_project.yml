@@ -1,0 +1,23 @@
+name: 'dosm_clickhouse'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dosm_clickhouse'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target" 
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dosm_clickhouse:
+    dosm:
+      +schema: dosm
+      +materialized: table

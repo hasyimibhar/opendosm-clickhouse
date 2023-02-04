@@ -1,0 +1,3 @@
+dbt-core==v1.3.2
+dbt-clickhouse==v1.3.3
+numpy
