@@ -41,3 +41,7 @@ Query id: d882e59d-335f-44f5-b5a8-c607d36aee40
 
 96 rows in set. Elapsed: 0.007 sec.
 ```
+
+You can also use Grafana at http://localhost:3000 to visualize the data.
+
+<img src="example.png" />

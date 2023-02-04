@@ -15,3 +15,16 @@ services:
       - ./dbt:/usr/app
     depends_on:
       - clickhouse-server
+
+  grafana:
+    image: 'grafana/grafana:9.3.6'
+    depends_on:
+      - clickhouse-server
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_INSTALL_PLUGINS=vertamedia-clickhouse-datasource,grafana-clickhouse-datasource
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=password
+    volumes:
+      - ./docker-compose/grafana/provisioning:/etc/grafana/provisioning

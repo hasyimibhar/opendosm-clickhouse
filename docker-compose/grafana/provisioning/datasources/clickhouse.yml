@@ -1,0 +1,8 @@
+datasources:
+- name: Altinity plugin for ClickHouse
+  access: proxy
+  type: vertamedia-clickhouse-datasource
+  uid: clickhouse
+  url: http://clickhouse-server:8123
+  isDefault: true
+  editable: true
