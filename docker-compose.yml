@@ -7,11 +7,11 @@ services:
       test: ["CMD", "curl", "http://localhost:8123"]
 
   dbt:
-    build: dosm_clickhouse
+    build: dbt
     entrypoint: dbt
     ports:
       - "8080:8080"
     volumes:
-      - ./dosm_clickhouse:/usr/app
+      - ./dbt:/usr/app
     depends_on:
       - clickhouse-server
