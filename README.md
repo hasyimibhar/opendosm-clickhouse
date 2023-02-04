@@ -13,6 +13,9 @@ scripts/start.sh
 ```
 
 Then go to http://localhost:8123/play?user=default#c2VsZWN0ICogZnJvbSBkb3NtLmNwaV9jb3Jl.
+
+<img src="images/clickhouse.png" />
+
 Or use `clickhouse-client`:
 
 ```sh
@@ -44,7 +47,7 @@ Query id: d882e59d-335f-44f5-b5a8-c607d36aee40
 
 You can also use Grafana at http://localhost:3000 to visualize the data.
 
-<img src="example.png" />
+<img src="images/grafana.png" />
 
 To list all tables:
 
