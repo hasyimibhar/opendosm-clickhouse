@@ -1,6 +1,6 @@
 # opendosm-clickhouse
 
-Access Malaysia's [OpenDOSM](https://open.dosm.gov.my/) data from ClickHouse.
+Access [OpenDOSM](https://open.dosm.gov.my/) (Department of Statistics Malaysia) data from ClickHouse.
 
 ## How it works
 
