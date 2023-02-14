@@ -64,3 +64,9 @@ To list all tables:
 ```sql
 SHOW TABLES FROM dosm
 ```
+
+## TODO
+
+- [ ] Use something like [Lightdash](https://github.com/lightdash/lightdash) instead of Grafana
+- [ ] Add price checker dataset
+- [ ] Use incremental materialization for daily data
